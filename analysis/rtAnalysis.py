@@ -1,4 +1,3 @@
-from scipy.stats import ttest_rel
 from pingouin import ttest
 
 def rt_ttest(df):
