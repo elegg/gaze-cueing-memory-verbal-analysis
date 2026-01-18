@@ -1,0 +1,228 @@
+
+{
+  "objects":[
+  {"name":"TEST TRIALS",
+    "contents":[
+    {
+      "key":"image1",
+      "type":"url",
+      "description":"url to image file. This is always the image of the face with eyes directly facing the participant item"
+  },
+  {
+      "key":"image2",
+      "type":"url",
+      "description":"url to image file. This is either the image of the face with eyes facing left or the image with eyes facing right"
+  },
+  {
+      "key":"grid_items",
+      "type":"array",
+      "description":"array of letter information",
+      "contents":"LETTER OBJECT"
+  },
+  {
+      "key":"target",
+      "type":"object",
+      "description":"the target probe presented",
+      "contents":"LETTER OBJECT"
+  },
+  {
+    "key":"gaze_direction",
+      "type":"enum",
+      "description":"is gaze to left or right",
+      "contents":["left", "right"]
+    
+
+  },
+  {
+    "key":"grid_position",
+      "type":"enum",
+      "description":"is grid on left or right",
+      "contents":["left", "right"]
+    
+
+  },
+  {
+    "key":"target_type",
+      "type":"enum",
+      "description":"is target valid (gazed at) or invalid (gazed away)",
+      "contents":["valid", "invalid"]
+      
+    
+
+  },
+  {
+    "key":"trial_type",
+      "type":"enum",
+      "description":"type of trial",
+      "contents":["practice", "block-1", "block-2", "block-3", "block-4"]
+    
+
+  },
+  {
+    "key":"face",
+      "type":"enum",
+      "description":"identity of face to be shown a -f",
+      "contents":["a", "b", "c", "d", "e", ""]
+    
+
+  },
+  {
+    "key":"window",
+      "type":"object",
+      "description":"x, y dimensions of window and name of HTML element that was fullscreen or FALSE if participants were not in fullscreen mode"
+  },
+  {
+    "key":"rt",
+      "type":"integer",
+      "description":"time in ms before participants key press"
+    
+
+  },
+  {
+    "key":"response_type",
+      "type":"string",
+      "description":"type of response"
+  
+  },
+  {
+    "key":"key_press",
+      "type":"string",
+      "description":"name of key pressed",
+      "contents":["left", "right"]
+  },
+  {
+    "key":"response",
+      "type":"string",
+      "description":"name of key pressed",
+      "contents":["left", "right"]
+  },
+  {
+    "key":"avg_frame_time",
+      "type":"float",
+      "description":"time in ms screen displayed for before refreshing"
+  },
+  {
+    "key":"center_x",
+      "type":"float",
+      "description":"x coord at centre"
+  },
+  {
+    "key":"center_y",
+      "type":"float",
+      "description":"y coord at centre"
+  },
+  {
+    "key":"trial_type",
+      "type":"string",
+      "description":"jspsych trial type name"
+  },
+   {
+    "key":"trial_index",
+      "type":"int",
+      "description":"trial index"
+  },
+   {
+    "key":"plugin_version",
+      "type":"string",
+      "description":"version of jspsych plugin"
+  },
+   {
+    "key":"time_elapsed",
+      "type":"int",
+      "description":"elapsed time"
+  }
+
+  
+
+]
+  },
+  {
+    "name":"OTHER_TRIAL_COMPONENTS",
+    "description":"stored information for trial components (e.g. inter-trial intervals) that were presented but are not critical to analysis",
+    "contents":[
+
+  {
+    "key":"rt",
+      "type":"integer",
+      "description":"time in ms before participants key press"
+    
+
+  },
+  {
+    "key":"response_type",
+      "type":"string",
+      "description":"type of response"
+  
+  },
+  {
+    "key":"key_press",
+      "type":"string",
+      "description":"name of key pressed",
+      "contents":["left", "right"]
+  },
+  {
+    "key":"response",
+      "type":"string",
+      "description":"name of key pressed",
+      "contents":["left", "right"]
+  },
+  {
+    "key":"avg_frame_time",
+      "type":"float",
+      "description":"time in ms screen displayed for before refreshing"
+  },
+  {
+    "key":"center_x",
+      "type":"float",
+      "description":"x coord at centre"
+  },
+  {
+    "key":"center_y",
+      "type":"float",
+      "description":"y coord at centre"
+  },
+  {
+    "key":"trial_type",
+      "type":"string",
+      "description":"jspsych trial type name"
+  },
+   {
+    "key":"trial_index",
+      "type":"int",
+      "description":"trial index"
+  },
+   {
+    "key":"plugin_version",
+      "type":"string",
+      "description":"version of jspsych plugin"
+  },
+   {
+    "key":"time_elapsed",
+      "type":"int",
+      "description":"elapsed time"
+  }
+    ]
+  
+
+
+},
+
+  {
+    "name":"LETTER OBJECT",
+    "contents":[
+      {
+        "key":"letter",
+        "value":"string",
+        "description":"letter to be displayed or nothing if blank string"
+    },
+    {
+        "key":"color",
+        "value":"string",
+        "description":"color of letter"
+    }
+    ]
+      
+    
+  }
+]
+}
